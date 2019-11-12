@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+<nav class="ui inverted  attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-mobile-hide item m-item"><i class="mini home icon"></i>首页</a>
+            <a href="#" class="m-mobile-hide item m-item"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-mobile-hide item m-item"><i class="mini tags icon"></i>标签</a>
+            <a href="#" class="m-mobile-hide item m-item"><i class="mini clone icon"></i>归档</a>
+            <a href="#" class="m-mobile-hide item m-item"><i class="mini info icon"></i>关于我</a>
+            <div class="right m-mobile-hide item m-item">
+                <div class="ui transparent inverted input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black button m-right-top m-mobile-show">
+        <i class="sidebar icon "></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <!--头部-->
+        <div class="ui top attached segment">
+            <div class="ui  horizontal link list">
+                <div class="item">
+                    <img src="https://picsum.photos/100/100?image=1005" alt=""
+                         class="ui avatar image">
+                    <div class="content"><a href="#" class="header ">刘洪辰</a></div>
+                </div>
+                <div class="item">
+                    <i class="calendar icon"></i> 2019-11-12
+                </div>
+                <div class="item">
+                    <i class="eye icon"></i> 2323
+                </div>
+            </div>
+        </div>
+        <!--图片区域-->
+        <div class="ui attached segment">
+            <img src="https://picsum.photos/800/450?image=1005" alt="" class="ui fluid image rounded">
+        </div>
+        <!--内容区域-->
+        <div class="ui attached segment padded">
+            <div class="ui segment basic right aligned">
+                <div class="ui orange basic label">原创</div>
+            </div>
+            <h2 class="ui header center aligned">从挖沙中感悟到的</h2>
+            <br>
+            <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+                <p>富人喜欢冬天，因为他们有钱，把冬天过的像春天似的。我喜欢春天，因为我没有富余的钱，冬天寒冷难熬。由于我从事的职业，我不可能步入富人的天堂。于是，我喜欢春天。</p>
+            </div>
+
+            <!--            标签-->
+            <div class="m-padded-lr-responsive">
+                <div class="ui basic teal left pointing label">
+                    方法论
+                </div>
+            </div>
+            <!--            赞赏-->
+            <div class="ui center aligned basic segment">
+                <button id="payBtn" class="ui basic orange circular button">赞赏</button>
+            </div>
+            <div class="ui payQR flowing popup transition hidden">
+                <div class="ui orange basic label">
+                    <div class="ui images" style="font-size: inherit">
+                        <div class="image">
+                            <img src="./static/images/wechatPay.jpg" alt="" class="ui rounded bordered image"
+                                 style="width: 150px;">
+                            <div>微信</div>
+                        </div>
+                        <div class="image">
+                            <img src="static/images/aliPay.jpg" alt="" class="ui  rounded bordered image"
+                                 style="width: 150px;">
+                            <div>支付宝</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--博客信息-->
+        <div class="ui attached positive message">
+            <div class="ui middle grid">
+                <div class="eleven wide column">
+                    <ul class="list">
+                        <li>作者：刘洪辰（联系作者）</li>
+                        <li>发表时间</li>
+                        <li>版权声明</li>
+                        <li>公众号转载</li>
+                    </ul>
+                </div>
+                <div class="five wide column">
+                    <img src="./static/images/wechat.jpg" alt="" class="ui right floated rounded bordered image" style="width: 110px;">
+                </div>
+            </div>
+        </div>
+        <!--留言区域-->
+        <div class="ui bottom attached segment">
+<!--            留言列表-->
+            <div class="ui teal segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">评论</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/100/100?image=1005">
+                        </a>
+                        <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">今天下午 5:42</span>
+                            </div>
+                            <div class="text">太赞了！ </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/100/100?image=1005">
+                        </a>
+                        <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">昨天上午12:30</span>
+                            </div>
+                            <div class="text">
+                                <p>這對我的研究是非常有用.謝謝!</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://picsum.photos/100/100?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Jenny Hess</a>
+                                    <div class="metadata">
+                                        <span class="date">刚刚</span>
+                                    </div>
+                                    <div class="text">艾略特你永远是多么正确 :) </div>
+                                    <div class="actions">
+                                        <a class="reply">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/100/100?image=1005">
+                        </a>
+                        <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                                <span class="date">5 天以前</span>
+                            </div>
+                            <div class="text">老兄，这太棒了。非常感谢。 </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            提交留言区域-->
+            <div class="ui form">
+                <div class="field">
+                    <textarea name="content" id="comment" cols="30" rows="10" placeholder="请输入评论信息"></textarea>
+                </div>
+                <div class="fields">
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui input left icon">
+                            <i class="user icon "></i>
+                            <input type="text" name="nickname" id="nickname" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui input left icon">
+                            <i class="mail icon"></i>
+                            <input type="email" name="email" id="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!--底部-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.jpg" class="ui rounded image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-spaced m-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: 892698613&#64qq.com</a>
+                    <a href="#" class="item">QQ: 892698613</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-spaced m-opacity-mini">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright &copy; 2019 - 2019 blog Designed by
+            LiuHongchen</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide')
+    });
+
+    $('#payBtn').popup({
+        popup : $('.payQR.popup'),
+        on : 'click',
+        position : 'bottom center'
+    })
+</script>
+</body>
+</html>
